@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="author" content="Samuel Nonato">
+    <meta name="keywords" content="questões ,recordes, speedrun, videogames, jogos">
+    <meta name="description" content="Questionário sobre speedruns">
+
+    <title>Questionário</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Questionário de Speedrun</h1>
+
+    </header>
+
+    <nav>
+        <a href="inicio.html">Início</a> |
+        <a href="historia.html">História</a> |
+        <a href="categorias.html">Categorias</a> |
+        <a href="recordes.html">Recordes</a> |
+        <a href="fim.html">Questionário</a>
+    </nav>
+
+    <main>
+
+        <section>
+
+            <h2>Qual jogo você gostaria de zerar?</h2>
+
+            <article>
+
+                <p>
+                    Depois de conhecer um pouco sobre o mundo das Speedruns,
+                    responda às perguntas abaixo sobre os jogos que você
+                    gostaria de completar. Os campos marcados como obrigatórios precisam ser
+                    preenchidos antes do envio.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <section>
+
+            <h2>Questionário</h2>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Informações do jogador</legend>
+
+                    <p>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </p>
+
+                    <p>
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade" placeholder="Digite sua idade" min="1" required>
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Seu jogo</legend>
+
+                    <p>
+                        <label for="jogo">
+                            Qual jogo você gostaria de zerar?
+                        </label>
+
+                        <input type="text" id="jogo" name="jogo" list="lista-jogos"
+                            placeholder="Digite ou escolha um jogo" required>
+
+                        <datalist id="lista-jogos">
+                            <option value="Minecraft">
+                            <option value="Dark Souls">
+                            <option value="Elden Ring">
+                            <option value="Resident Evil 4">
+                            <option value="Super Mario 64">
+                            <option value="The Legend of Zelda">
+                            <option value="Hollow Knight">
+                            <option value="Celeste">
+                        </datalist>
+                    </p>
+
+                    <p>
+                        Você já zerou esse jogo antes?
+                    </p>
+
+                    <input type="radio" id="zerou-sim" name="ja_zerou" value="sim" required>
+
+                    <label for="zerou-sim">Sim</label>
+
+                    <input type="radio" id="zerou-nao" name="ja_zerou" value="nao">
+
+                    <label for="zerou-nao">Não</label>
+
+                    <p>
+                        Qual categoria de Speedrun você gostaria de tentar?
+                    </p>
+
+                    <input type="radio" id="cem" name="categoria" value="100%">
+
+                    <label for="cem">100%</label>
+
+                    <br>
+
+                    <input type="radio" id="glitchless" name="categoria" value="Glitchless">
+
+                    <label for="glitchless">Glitchless</label>
+
+                    <br>
+
+                    <input type="radio" id="low" name="categoria" value="Low%">
+
+                    <label for="low">Low%</label>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Seu desafio</legend>
+
+                    <p>
+                        <label for="dificuldade">
+                            De 1 a 10, qual dificuldade você acredita que esse
+                            jogo possui?
+                        </label>
+                    </p>
+
+                    <input type="range" id="dificuldade" name="dificuldade" min="1" max="10" value="5">
+
+
+                    <p>
+                        <label for="data">
+                            Quando você pretende começar sua Speedrun?
+                        </label>
+
+                        <input type="date" id="data" name="data">
+                    </p>
+
+                    <p>
+                        <label for="arquivo">
+                            Se quiser, envie uma imagem relacionada ao jogo:
+                        </label>
+
+                        <input type="file" id="arquivo" name="arquivo" accept="image/*">
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Experiência com Speedrun</legend>
+
+                    <p>
+                        Você já tentou fazer uma Speedrun?
+                    </p>
+
+                    <input type="radio" id="speedrun-sim" name="fez_speedrun" value="sim">
+
+                    <label for="speedrun-sim">Sim</label>
+
+                    <input type="radio" id="speedrun-nao" name="fez_speedrun" value="nao">
+
+                    <label for="speedrun-nao">Não</label>
+
+                    <p>
+                        Quais são seus principais objetivos?
+                    </p>
+
+                    <input type="checkbox" id="objetivo1" name="objetivo" value="zerar">
+
+                    <label for="objetivo1">
+                        Apenas zerar o jogo
+                    </label>
+
+                    <br>
+
+                    <input type="checkbox" id="objetivo2" name="objetivo" value="tempo">
+
+                    <label for="objetivo2">
+                        Conseguir um bom tempo
+                    </label>
+
+                    <br>
+
+                    <input type="checkbox" id="objetivo3" name="objetivo" value="pb">
+
+                    <label for="objetivo3">
+                        Conseguir um novo PB
+                    </label>
+
+                    <br>
+
+                    <input type="checkbox" id="objetivo4" name="objetivo" value="recorde">
+
+                    <label for="objetivo4">
+                        Tentar alcançar um recorde
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Conte mais</legend>
+
+                    <p>
+                        <label for="motivo">
+                            Por que você gostaria de zerar esse jogo?
+                        </label>
+                    </p>
+
+                    <textarea id="motivo" name="motivo" rows="5" cols="50"
+                        placeholder="Conte por que você escolheu esse jogo..." required></textarea>
+
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Enviar questionário">
+
+                    <input type="reset" value="Limpar respostas">
+                </p>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+        <a href="../html/inicio.html">inicio</a>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>© 2026 Samuel Nonato. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
